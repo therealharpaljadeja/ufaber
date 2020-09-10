@@ -317,4 +317,93 @@ header .burger i {
   color: #FF3A58;
 }
 
+.badges-section {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+.badges-section:before {
+  content: "";
+  width: 40px;
+  height: 10px;
+  background: #A0E467;
+  border-radius: 6px;
+  position: relative;
+}
+.badges-section h2 {
+  font-family: "Granstander Clean";
+}
+.badges-section .goals, .badges-section .badges, .badges-section .skills {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+}
+.badges-section .goals .title, .badges-section .badges .title, .badges-section .skills .title {
+  width: max-content;
+  padding: 0.5rem 1rem;
+  display: inline;
+  color: white;
+  border-radius: 25px;
+  background: #6188EA 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 0px #0000001A;
+  font-family: Granstander Clean;
+  font-size: 1rem;
+}
+.badges-section .goals .goals-list, .badges-section .badges .goals-list, .badges-section .skills .goals-list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+  height: 3.5rem;
+  overflow-x: scroll;
+}
+.badges-section .goals .goals-list::-webkit-scrollbar, .badges-section .goals .goals-list::-moz-scrollbar, .badges-section .goals .goals-list::-moz-scrollbar-thumb, .badges-section .goals .goals-list::-moz-scrollbar, .badges-section .badges .goals-list::-webkit-scrollbar, .badges-section .badges .goals-list::-moz-scrollbar, .badges-section .badges .goals-list::-moz-scrollbar-thumb, .badges-section .badges .goals-list::-moz-scrollbar, .badges-section .skills .goals-list::-webkit-scrollbar, .badges-section .skills .goals-list::-moz-scrollbar, .badges-section .skills .goals-list::-moz-scrollbar-thumb, .badges-section .skills .goals-list::-moz-scrollbar {
+  display: none;
+}
+.badges-section .goals .goals-list .item, .badges-section .badges .goals-list .item, .badges-section .skills .goals-list .item {
+  max-height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 0px #0000001A;
+  border: 1px solid #CBD8DB;
+  border-radius: 30px;
+  width: max-content;
+  padding: 0.5rem 6rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.badges-section .goals .goals-list .item .number, .badges-section .badges .goals-list .item .number, .badges-section .skills .goals-list .item .number {
+  border-radius: 50%;
+  font-family: Granstander Clean;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 0.5px solid #6997A1;
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #37575E;
+}
+.badges-section .goals .goals-list .item .name, .badges-section .badges .goals-list .item .name, .badges-section .skills .goals-list .item .name {
+  margin-left: 1rem;
+  font-family: Granstander Clean;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.badges-section .badges .title, .badges-section .skills .title {
+  background-color: #8AE241;
+}
+.badges-section .badges .goals-list .item .number, .badges-section .skills .goals-list .item .number {
+  background-color: #FFE30D;
+  color: #8A7A00;
+  border: none;
+}
+.badges-section .skills .title {
+  background-color: #AF70FC;
+}
+
 /*# sourceMappingURL=style.css.map */

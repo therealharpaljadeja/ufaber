@@ -1,0 +1,100 @@
+.badges-section{
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	padding: 1rem;
+	position: relative;
+	&:before {
+		content: '';
+		width: 40px;
+		height: 10px;
+		background: #A0E467;
+		border-radius: 6px;
+		position: relative;
+	}
+	h2 {
+		font-family: "Granstander Clean";
+	}
+
+	.goals, .badges, .skills{
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: 1fr;
+		.title{
+			width: max-content;
+			padding: .5rem 1rem;
+			display: inline;
+			color: white;
+			border-radius: 25px;
+			background: #6188EA 0% 0% no-repeat padding-box;
+			box-shadow: 0px 3px 0px #0000001A;
+			font-family: Granstander Clean;
+			font-size: 1rem;
+		}
+
+		.goals-list{
+			display: grid;
+			grid-auto-flow: column;
+			grid-gap: 1rem;
+			height: 3.5rem;
+			overflow-x: scroll;
+			&::-webkit-scrollbar, &::-moz-scrollbar, &::-moz-scrollbar-thumb, &::-moz-scrollbar{
+				display: none;
+			}
+			.item{
+				max-height: 100%;
+				min-height: 100%;
+				box-sizing: border-box;
+				background: #FFFFFF 0% 0% no-repeat padding-box;
+				box-shadow:	 1px 1px 0px #0000001A;
+				border: 1px solid #CBD8DB;
+				border-radius: 30px;
+				width: max-content;
+				padding: .5rem 6rem 0.5rem .5rem;
+				display: flex;
+				flex-direction: row;
+				.number{
+					border-radius: 50%;
+					font-family: Granstander Clean;
+					background: #FFFFFF 0% 0% no-repeat padding-box;
+					border: 0.5px solid #6997A1;
+					height: 100%;
+					width: auto;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					color:#37575E;
+				}
+				.name{
+					margin-left: 1rem;
+					font-family: Granstander Clean;
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+				}
+			}
+		}
+	}
+
+	.badges, .skills{
+		.title{
+			background-color: #8AE241;
+		}
+		.goals-list{
+			.item{
+				.number{
+					background-color: #FFE30D;
+					color: #8A7A00;
+					border: none;
+				}
+			}
+		}
+	}
+
+	.skills{
+		.title{
+			background-color: #AF70FC;
+		}
+	}
+}
