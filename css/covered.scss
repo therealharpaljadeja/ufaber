@@ -1,0 +1,28 @@
+.covered, .ready{
+	&:before {
+		content: '';
+		width: 40px;
+		height: 10px;
+		background: #A0E467;
+		border-radius: 6px;
+		position: relative;
+	}
+	h2 {
+		font-family: "Granstander Clean";
+	}
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	padding: 1rem;
+	position: relative;
+
+	.description{
+		p{
+			font-family: 'Montserrat';
+			color: #5A5959;
+			letter-spacing: .1rem;
+			line-height: 1.3em;
+		}
+	}
+}
