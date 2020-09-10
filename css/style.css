@@ -121,4 +121,200 @@ header .burger i {
   transform: translate(-50%, -50%);
 }
 
+.main-content {
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+}
+.main-content .part-1 span {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+}
+.main-content .title h1 {
+  font-size: 1.3rem;
+  font-family: "Montserrat";
+}
+.main-content .img_wrapper {
+  height: 16rem;
+  width: 100%;
+  position: relative;
+}
+.main-content .img_wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.main-content .img_wrapper button {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-family: Granstander Clean;
+  font-size: 12px;
+  padding: 1rem;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 0px #00000029;
+  border-radius: 5px;
+}
+.main-content .img_wrapper button i {
+  margin-right: 0.5rem;
+}
+.main-content .date-and-devices {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+}
+.main-content .date-and-devices .text {
+  font-family: "Gotham Book";
+  font-size: 0.8rem;
+  color: #999999;
+}
+.main-content .date-and-devices .date {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  font-family: "Montserrat";
+}
+.main-content .date-and-devices .devices {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+.main-content .date-and-devices .devices .images {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+}
+.main-content .date-and-devices .devices .images span {
+  font-family: "Gotham Book";
+  font-size: 0.8rem;
+  color: #999999;
+}
+.main-content .slots {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+.main-content .slots .heading {
+  font-family: "Gotham Book";
+  font-size: 0.8rem;
+  color: #999999;
+}
+.main-content .slots .time-slots {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.main-content .slots .time-slots .slot {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
+  width: 7rem;
+  position: relative;
+}
+.main-content .slots .time-slots .slot:hover .slot-timing {
+  background: #BEFFDA 0% 0% no-repeat padding-box;
+  border: 0.6000000238px solid #02C972;
+  color: #02C972;
+}
+.main-content .slots .time-slots .slot:hover .seats-left {
+  color: #02C972;
+}
+.main-content .slots .time-slots .slot .slot-timing {
+  padding: 0.5rem;
+  height: 20px;
+  position: relative;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 0.6000000238px solid #607D8B;
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Montserrat";
+  color: #607D8B;
+}
+.main-content .slots .time-slots .slot .seats-left {
+  font-family: "Gotham Book";
+  font-size: 0.8rem;
+  color: #999999;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-content .class-fees {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+.main-content .class-fees .text {
+  font-family: "Gotham Book";
+  font-size: 0.8rem;
+  color: #999999;
+}
+.main-content .class-fees .lower {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  grid-gap: 1rem;
+}
+.main-content .class-fees .lower .amount {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 0px #0000001A;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.main-content .class-fees .lower .amount .price {
+  text-align: center;
+  text-decoration: line-through;
+  font-family: "Montserrat";
+  color: #999999;
+  font-weight: 600;
+}
+.main-content .class-fees .lower .amount .discount-price {
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: "Montserrat";
+  color: #000000;
+  font-weight: 600;
+}
+.main-content .class-fees .lower .points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .class-fees .lower .points a:active, .main-content .class-fees .lower .points a:hover, .main-content .class-fees .lower .points a {
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: #FF3A58;
+  font-size: 12px;
+}
+.main-content .book {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-gap: 1rem;
+}
+.main-content .book .book-class, .main-content .book .share {
+  background: #FF3A58 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 0px #0000001A;
+  border: 1px solid #FF3A58;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem;
+  font-family: "Granstander Clean";
+  font-size: 1rem;
+}
+.main-content .book .share {
+  color: #FF3A58;
+  background: white;
+}
+.main-content .upgrade {
+  text-align: center;
+  font-family: "Montserrat";
+}
+.main-content .upgrade span {
+  text-decoration: underline;
+  color: #FF3A58;
+}
+
 /*# sourceMappingURL=style.css.map */
