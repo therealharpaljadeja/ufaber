@@ -7,6 +7,7 @@
 			font-family: 'Montserrat';
 			font-size: 12px;
 			font-weight: 600;
+			text-transform: uppercase;
 		}
 	}
 
@@ -15,6 +16,14 @@
 			font-size: 1.3rem;
 			font-family: "Montserrat";
 		}
+	}
+	.grid{
+		display: grid;
+		grid-gap: 1rem;
+	}
+	.col-2{
+		display: grid;
+		grid-gap: 1rem;
 	}
 	.img_wrapper{
 		height: 16rem;
@@ -209,4 +218,30 @@
 			color: #FF3A58;
 		}
 	}
+}
+
+
+@media (min-width: 760px) {
+	.main-content{
+		padding: 3rem;
+		.part-1{
+			span{
+				font-size: 1rem;
+				margin-right: .5rem;
+			}
+		}	
+		.title{
+			h1{
+				font-size: 1.5rem;
+			}
+		}
+		.grid{
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 3rem;
+		}
+		.img_wrapper{
+			height: 100%;
+		}
+	}
+	
 }

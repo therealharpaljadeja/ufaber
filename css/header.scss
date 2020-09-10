@@ -67,3 +67,34 @@ header{
 }
 
 
+
+@media (min-width: 760px) {
+	header{
+		padding: 1rem 3rem;
+		.img_wrapper{
+			grid-column: 1/2;
+		}
+		nav{
+			grid-column: 5/8;
+			display: flex;
+			justify-content: center;
+			ul {
+				display: flex;
+				flex-direction: row;
+				margin: 0;
+				justify-content: center;
+				align-items: center;
+				li {
+					margin-right: 1rem;
+					font-family: Granstander Clean;
+				}
+			}
+		}
+		.balance{
+			grid-column: 12/13;
+		}
+		.burger{
+			display: none;
+		}
+	}
+}
